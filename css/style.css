@@ -1,0 +1,255 @@
+
+html {
+  background: #EEEEEE;
+  scroll-behavior: smooth;
+} /* делает прокрутку плавной */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  /* margin: 0 auto; */
+}
+html, body{
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+.wrapper {
+  max-width: 760px;
+  padding: 0 80px 0 80px;
+  margin: 0 auto;
+  background: #FFFFFF;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.h1{
+  /* margin-top: 29px; */
+  max-width: 700px;
+  width: 100%;
+  /* width: 804px; */
+  /* height: 32px; */
+  font-family: 'Exo';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #777;
+}
+.h2{
+  /* margin-top: 240px; */
+  max-width: 700px;
+  /* width: 1132px; */
+  /* height: 154px; */
+  font-family: 'Exo 2';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  /* text-align: center; */
+  letter-spacing: 0.4px;
+  color: #BB1E1E;
+}
+.header{
+  margin-top: 80px;
+}
+.logo {
+  margin-top: 66px;
+  max-width: 700px;
+  width: 100%;
+  background: #04d512;
+  padding: 20px 20px 20px 20px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.avatar{
+  max-width: 170px;
+  /* height: 250px; */
+}
+.avatar>img{
+  width: 100%;
+  height: auto;
+}
+.adaptive{
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+.info{
+  max-width: 290px;
+  display: flex;
+  flex-flow: column;
+  /* align-items: start; */
+  /* justify-content: start; */
+}
+.frontend{
+  margin-top: 30px;
+}
+.contacts{
+  display: flex;
+  flex-flow: column;
+}
+.absolute{
+  margin: 5px;
+  width: 25px;
+  height: 25px;
+  border: 3px solid #FFFFFF;
+  /* border-color: #FFFFFF; */
+  border-radius: 50px;
+}
+.button_instagram{
+  /* width: 40px; */
+  /* height: 30px; */
+  /* color: #0ba497; */
+  
+  background: url(../img/Viber.jpg);
+  /* background-color: #a4270b; */
+}
+.button_telegram{
+  background: url(../img/telegram.jpg);
+}
+.button_whatApp{
+  
+  background: url(../img/Whataap.jpg);
+}
+.button_post{
+  background: url(../img/icons8-конверт-в-круге-100.png);
+}
+.absolute:hover {
+  /* background-color: #4414d4; */
+  
+  /* color: #FDDCC4; */
+  transition: background-color 1s;
+  opacity: 0.3;
+}
+.color{
+  max-width: 760px;
+  padding: 0 0px 0 20px;
+  background: #FFFFFF;
+}
+.block{
+  display: flex;
+  flex-flow: row wrap;
+}
+ul{
+  margin-top: 20px;
+}
+.skills{
+  padding: 0 0px 0 20px;
+  order: 3;
+  max-width: 230px;
+  width: 100%;
+  /* height: 120px; */
+}
+.languish{
+  list-style: none;
+  order: 7;
+  max-width: 250px;
+  width: 100%;
+  /* height: 120px; */
+}
+.education{
+  list-style: none;
+  order: 5;
+  margin-left: 110px;
+  max-width: 310px;
+  width: 100%;
+}
+.education2{
+  list-style: none;
+  order: 8;
+  margin-left: 110px;
+  max-width: 310px;
+  width: 100%;
+}
+.portfolio{
+  list-style: none;
+  order: 9;
+}
+.profession{
+  list-style: none;
+  order: 10;
+  /* width: 700px; */
+  /* height: 200px; */
+}
+.soft_skills{
+  list-style: none;
+  order: 12;
+  /* width: 700px; */
+  /* height: 200px; */
+}
+.additionally{
+  list-style: none;
+  order: 14;
+  /* width: 700px; */
+  /* height: 200px; */
+}
+.h2_bottom{
+  margin: 0;
+}
+.footer{
+  max-width: 760px;
+  height: 80px;
+  /* margin-bottom: 80px; */
+}
+
+@media (max-width: 830px){
+  .adaptive{
+    max-width: 300px;
+    flex-flow: column;
+    align-items: center;
+  }
+  .contacts{
+    flex-flow: row;
+  }
+  .education{
+    margin-left: 0;
+  }
+  .education2{
+    margin-left: 0;
+  }
+}
+@media (max-width: 630px){
+  .header{
+    margin: 0;
+  }
+  .logo {
+    margin-top: 40px;
+    flex-flow: column;
+    align-items: center;
+  }
+  .h1{
+    margin-top: 10px;
+    width: 210px;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+  }
+  .h2{
+    margin-top: 10px;
+    font-size: 21px;
+    line-height: 25px;
+    text-align: center;
+  }
+  .block{
+    justify-content: center;
+    /* align-items: center; */
+    /* display: flex; */
+    /* flex-flow: row wrap; */
+  }
+  .ul{
+    max-width: 400px;
+    width: 100%;
+  }
+  .portfolio{
+    order: 6;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    /* justify-content: center; */
+  }
+}
